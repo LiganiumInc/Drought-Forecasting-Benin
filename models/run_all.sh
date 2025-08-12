@@ -1,0 +1,14 @@
+
+python banikoara_generic_model_building.py
+
+python gogounou_generic_model_building.py
+
+python kandi_generic_model_building.py
+
+python karimama_generic_model_building.py
+
+python malanville_generic_model_building.py
+
+python segbana_generic_model_building.py
+
+

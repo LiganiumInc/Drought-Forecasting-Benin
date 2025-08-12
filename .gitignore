@@ -1,0 +1,10 @@
+__pycache__
+env/
+NEW_DATAV2/
+tests/
+Zenodo/
+Zenodo.zip
+*.pyc
+*.pyo
+.ipynb_checkpoints
+*.egg-info

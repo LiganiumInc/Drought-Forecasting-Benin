@@ -1,0 +1,60 @@
+data_params:
+  data_path: '../datasets/'
+  lagged_data_path: '../datasets/lagged/'
+  save_path: '../results/'
+  dataset: 'Kandi_with_SPI6.csv'
+  city: 'Kandi'
+  target_column: 'SPI6(t)'
+  scaling_type: 'minmax'  # or 'standard' or 'none' or 'minmax'
+  # feature_range: (-1, 1) # if scaling_type is 'minmax'
+  include_target_lags: True
+  split_date: '2014-01-31'
+  window_size: 5
+  n_output_steps: 1
+  B_ARG: 30
+
+conv1d_model:
+  kernel_size: 5
+  dense_layers: 3
+  activ: ['relu', 'relu', 'linear']
+  dense_units: [64, 32, 1]
+  cnn_units: 64
+  epochs: 100
+  batch_size: 64
+
+  # lr: 0.001
+
+lstm_model:
+  lstm_layers: 2
+  dense_layers: 2
+  activ: ['relu', 'linear']
+  dense_units: [32, 1]
+  lstm_units: [64, 32]
+  dropout: False
+  dropout_val: 0
+  epochs: 100
+  batch_size: 64
+
+gru_model:
+  gru_layers: 2
+  dense_layers: 2
+  activ: ['relu', 'linear']
+  dense_units: [32, 1]
+  gru_units: [64, 32]
+  dropout: False
+  dropout_val: 0
+  epochs: 100
+  batch_size: 64
+
+conv1d_lstm_model:
+  filters: 64
+  kernel_size: 5
+  lstm_layers: 1
+  dense_layers: 2
+  activ: ['relu', 'linear']
+  dense_units: [32, 1]
+  lstm_units: [64] #[64, 32]
+  dropout: False
+  dropout_val: 0
+  epochs: 100
+  batch_size: 64
