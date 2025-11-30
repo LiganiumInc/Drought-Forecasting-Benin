@@ -85,12 +85,15 @@ The **Conv1D-LSTM** model emerged as the top performer, offering an optimal bala
 If you use this code in your research, please cite:
 
 ```bibtex
-@article{,
-  title={Prediction and Uncertainty Quantification of Drought in North Benin},
-  author={},
-  journal={},
+@article{Ligan_Tchokponhoue_Iliho-Manzi_Simperegui_Vodounon_2025,
+  title={Prediction and uncertainty quantification of drought in North Benin},
+  author={Ligan, Bernardin Marie Augustin Sèdjro and Tchokponhoue, Gbègninougbo Aurel Davy and Iliho Manzi, Alain Thierry and Simperegui, Kora B. Désiré and Vodounon, Rodrigue Bignon Wilfried},
+  journal={Environmental Data Science},
+  volume={4},
+  pages={e50},
   year={2025},
-  publisher={}
+  publisher={Cambridge University Press},
+  doi={10.1017/eds.2025.10025}
 }
 ```
 

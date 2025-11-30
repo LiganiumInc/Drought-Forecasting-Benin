@@ -73,17 +73,17 @@
           <h1 class="title is-1 publication-title">Prediction and uncertainty quantification of drought in North Benin</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="">Bernardin LIGAN</a><sup>1</sup>,</span>
+              <a href="">Bernardin Marie Augustin Sèdjro Ligan</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="">Aurel D. TCHOKPONHOUE</a><sup>1</sup>,</span>
+              <a href="">Gbègninougbo Aurel Davy Tchokponhoue</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="">Alain ILIHO</a><sup>2</sup>,
+              <a href="">Alain Thierry Iliho Manzi</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="">Désiré K. SIMPEREGUI</a><sup>1</sup>,
+              <a href="">Kora B. Désiré Simperegui</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="">Rodrigue VODOUNON</a><sup>3</sup>,
+              <a href="">Rodrigue Bignon Wilfried Vodounon</a><sup>3</sup>,
             </span>
            
           </div>
@@ -98,7 +98,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href=""
+                <a href="https://bit.ly/3Xhrrsc"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -106,7 +106,7 @@
                   <span>Paper</span>
                 </a>
               </span> 
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -114,7 +114,7 @@
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span> 
+              </span>  -->
               <!-- Video Link. -->
               <span class="link-block">
                 <a href=""
@@ -137,7 +137,7 @@
               </span>
               <!-- Dataset Link. -->
               <span class="link-block">
-                <a href="https://github.com/"
+                <a href="https://doi.org/10.5281/zenodo.16815746"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="far fa-images"></i>
@@ -156,10 +156,11 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="static/images/study_area_alibori.png" height="100%">
+      <img src="static/images/study_area_alibori.png" height="70%">
     </img>
       <h2 class="subtitle has-text-centered">
-        Alibori department cartography and geographic distribution of the locations.
+        Alibori department cartography and geographic distribution of the locations. The cropland
+        cover is derived from the MODIS land cover.
       </h2>
     </div>
   </div>
@@ -174,29 +175,68 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-           
+           Drought forecasting is a critical tool for mitigating the severe impacts of water scarcity, particularly in regions like North Benin, where agriculture is a cornerstone of livelihoods. Despite the vital importance of its accurate prediction in resource management, the ability to quantify uncertainties in forecasts is a significant pain point to enable more informed and trustworthy decision-making. So, this study aims to develop an uncertainty-aware prediction model for drought forecasting in six key localities within the Alibori department—Banikoara, Gogounou, Kandi, Karimama, Malanville, and Segbana—each facing unique challenges due to drought. To achieve this, we conducted a comprehensive experiment involving six machine learning models (linear regression, ridge regression, random forest, Xgboost, LightGBM, and SVM) and four deep learning models (Conv1D, LSTM, GRU, and Conv1D-LSTM) using the Standardized Precipitation Index at a 6-month scale. To address the uncertainty quantification challenge, we employed the Ensemble Batch Prediction Interval, a conformal prediction method specifically designed for time series data. Our comparative analysis, framed within the Borda count methodology, utilized performance metrics such as R2, RMSE, MSE, and carbon footprint, as well as uncertainty quantification metrics, including empirical coverage and the width of prediction intervals. The top-performing models achieved  scores of 98.29, 97.84, 97.76, 97.42, 96.61, and 97.07%, and prediction interval coverages of 0.94, 0.79, 0.93, 0.77, 0.73, and 0.93, respectively, for Banikoara, Gogounou, Malanville, Kandi, Segbana, and Karimama. The Conv1D-LSTM model stood out as the most effective, offering an optimal balance between predictive accuracy and uncertainty coverage.
           </p>
-          <p>
-            
-          </p>
-          <p>
-           
-          </p>
+         
         </div>
       </div>
     </div>
     <!--/ Abstract. -->
 </section>
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Impact Statement -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Impact Statement</h2>
+
+        <!-- Light Green Background Box -->
+        <div class="content has-text-justified"
+             style="background-color: #e6f6e6; padding: 1.5rem; border-radius: 8px;">
+          <p>
+            This study, one of the first of its kind in a low-income country like Benin,
+            underscores the importance of uncertainty quantification in drought forecasting
+            within these specific localities. The insights derived from our uncertainty-aware
+            models can support decision-makers, agricultural researchers, and local communities
+            in taking early and informed precautions against drought occurrences based on a range
+            of plausible scenarios.
+          </p>
+        </div>
+
+      </div>
+    </div>
+    <!--/ Impact Statement -->
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/DF_Pipeline.png" height="70%">
+    </img>
+      <h2 class="subtitle has-text-centered">
+        Flowchart of the proposed methodology: From multivariate time series preprocessing to model
+        training, uncertainty quantification with EnbPI, and final performance evaluation using various
+        statistical metrics.
+      </h2>
+    </div>
+  </div>
+</section>
+
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {},
-  title     = {},
-  journal   = {},
-  year      = {},
+    <pre><code>@article{Ligan_Tchokponhoue_Iliho-Manzi_Simperegui_Vodounon_2025,
+  title={Prediction and uncertainty quantification of drought in North Benin},
+  author={Ligan, Bernardin Marie Augustin Sèdjro and Tchokponhoue, Gbègninougbo Aurel Davy and Iliho Manzi, Alain Thierry and Simperegui, Kora B. Désiré and Vodounon, Rodrigue Bignon Wilfried},
+  journal={Environmental Data Science},
+  volume={4},
+  pages={e50},
+  year={2025},
+  publisher={Cambridge University Press},
+  doi={10.1017/eds.2025.10025}
 }</code></pre> 
   </div>
 </section>
